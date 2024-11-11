@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O que é Navbar Responsiva</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <!-- Cabeçalho com navegação principal -->
+    <header class="header">
+      <nav class="nav" aria-label="Navegação principal">
+          <a href="/" class="logo">Navbar</a>
+          <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+              <span class="hamburger-icon" aria-hidden="true"></span>
+          </button>
+          <ul class="nav-list" role="menu">
+              <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+              <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+              <li role="menuitem"><a href="pagina3.html">funcionalidades</a></li>
+              <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+              <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+                  <li role="menuitem" class="has-submenu">
+                    <a href="pagina6.html">Exemplos de Comandos</a>
+                    <!-- Submenu -->
+                    <ul class="submenu">
+                        <li><a href="pagina7.html">Código Simples</a></li>
+                        <li><a href="pagina8.html">Código Utilizado</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main class="hero">
+      <br> 
+      <h1>O que é Navbar Responsiva</h1>
+      <p>
+        Uma NavBar Responsiva é uma barra de navegação que se adapta
+automaticamente ao tamanho do ecrã do dispositivo utilizado, seja um computador,
+tablet ou smartphone. Essa adaptabilidade é essencial para garantir que os usuários
+tenham uma experiência de navegação consistente e intuitiva em qualquer
+dispositivo.
+      </p>
+<br>
+      <p>
+        A importância de uma navbar não pode ser subestimada. Uma navegação intuitiva
+        e bem organizada melhora significativamente a experiência do usuário,
+        reduzindo a frustração e o tempo de busca. Além disso, uma navbar responsiva
+        não apenas melhora a estética do site, mas também atende às necessidades dos
+        usuários modernos, que acessam a internet por meio de uma variedade de
+        dispositivos.
+      </p>
+    </main>
+  </body>
+</html>
