@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melhores Práticas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho com Navegação -->
+    <header class="header">
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="/" class="logo">Navbar</a>
+            <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger-icon" aria-hidden="true"></span>
+            </button>
+            <ul class="nav-list" role="menu">
+                <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+                <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+                <li role="menuitem"><a href="pagina3.html">Funcionalidades</a></li>
+                <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+                <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+                    <li role="menuitem" class="has-submenu">
+                      <a href="pagina6.html">Exemplos de Comandos</a>
+                      <!-- Submenu -->
+                      <ul class="submenu">
+                          <li><a href="pagina7.html">Código Simples</a></li>
+                          <li><a href="pagina8.html">Código Utilizado</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="hero">
+        <h1>Melhores Práticas</h1>
+        <p>As melhores práticas para construir uma navbar responsiva e de qualidade incluem:</p>
+<br>
+        <section>
+            <h2>Simplicidade:</h2>
+            <p>Manter a barra de navegação clara e simples. Exibir apenas
+                os itens essenciais e, se possível, ocultar menus menos importantes em
+                dropdowns.</p>
+        </section>
+<br>
+        <section>
+            <h2> Uso de Ícones:</h2>
+            <p>Ícones tornam o menu mais intuitivo, ocupando menos
+                espaço. Por exemplo, um ícone de "lupa" para pesquisa ou de "carrinho" para
+                compras.</p>
+        </section>
+<br>
+        <section>
+            <h2>Contraste de Cores:</h2>
+            <p>O design da NavBar deve garantir legibilidade,
+                especialmente em diferentes tamanhos de tela.</p>
+        </section>
+<br>
+<section>
+    <h2>Testes de Responsividade:</h2>
+    <p>Realizar testes em vários dispositivos e
+        tamanhos de tela para assegurar que a NavBar funcione corretamente em todos eles.</p>
+</section>
+ </main>
+</body>
+</html>
