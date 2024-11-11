@@ -1,0 +1,338 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  justify-content: flex-start;
+  align-items: center; /* Alinha o conteúdo centralizado horizontalmente */
+  text-align: center; /* Centraliza o texto de todo o conteúdo da página */
+}
+
+/* Links */
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #ff1493;
+  transform: scale(1.05);
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ff69b4;
+  padding-inline: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Navegação */
+.nav {
+  max-width: 1280px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Lista de Navegação */
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-list a {
+  font-size: 18px;
+  padding: 10px 0;
+  color: #fff;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.nav-list a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
+/* Submenu */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 105, 180, 0.95);
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  opacity: 0;
+  text-align: center;
+}
+
+.submenu a {
+  color: #fff;
+  padding: 8px 20px;
+  display: block;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submenu a:hover {
+  background-color: #ff1493;
+  color: #fff;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Efeito de Fade-in para o Submenu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botão Hamburger */
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito para navbar ao rolar */
+.nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.nav.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+/* Botão de Voltar ao Topo */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+  transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.visible {
+  display: block;
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  background: #ff1493;
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 750px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 2;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff69b4;
+    clip-path: circle(100px at 90% -15%);
+    transition: clip-path 0.6s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    margin-top: -7px;
+  }
+
+  /* Submenu no mobile */
+  .submenu {
+    position: static;
+    background-color: #ff69b4;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .has-submenu.active .submenu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Estilo para o Accordion */
+.accordion {
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #333;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho do Accordion */
+.accordion-header {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.accordion-header:hover {
+  background-color: #ff1493;
+}
+
+/* Conteúdo do Accordion */
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Quando o Accordion estiver aberto */
+.accordion-header.active + .accordion-content {
+  display: block;
+}
+
+/* Estilo do Código dentro do Accordion */
+.accordion-content pre {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
