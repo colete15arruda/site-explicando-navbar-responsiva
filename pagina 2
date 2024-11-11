@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principais Características</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="/" class="logo">Navbar</a>
+            <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger-icon" aria-hidden="true"></span>
+            </button>
+            <ul class="nav-list" role="menu">
+                <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+                <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+                <li role="menuitem"><a href="pagina3.html">funcionalidades</a></li>
+                <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+                <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+                    <li role="menuitem" class="has-submenu">
+                      <a href="pagina6.html">Exemplos de Comandos</a>
+                      <!-- Submenu -->
+                      <ul class="submenu">
+                          <li><a href="pagina7.html">Código Simples</a></li>
+                          <li><a href="pagina8.html">Código Utilizado</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+
+    <main class="hero">
+        <h1>Principais Características</h1>
+        <p>As principais características de uma navbar responsiva são essenciais para proporcionar uma navegação fluida e agradável:</p>
+        <br>
+    <h4>Adaptação ao Tamanho do Ecrã</h4>
+    <p> A NavBar reorganiza automaticamente
+      seus elementos para se adequar a ecrãs grandes e pequenos. Em ecrãs
+     maiores, geralmente exibe o menu completo, enquanto em dispositivos
+      menores pode se transformar num menu do tipo "hambúrguer"</p>
+     <br> 
+
+       <h4>Uso de Media Queries</h4>
+        <p>Essas regras de CSS são aplicadas para definir
+           estilos específicos conforme a largura da tela. Assim, é possível ajustar o
+           layout da NavBar conforme o dispositivo.</p>
+        <br>
+
+      <h4>Ocultação e Expansão de Elementos</h4>
+      <p>Em ecrãs pequenos, a navbar pode
+        ocultar itens e exibi-los ao toque ou clique, economizando espaço.<p>
+        <h4>Interatividade</h4>
+        <p>A NavBar responsiva pode incluir ícones, dropdowns e
+            animações para tornar a navegação mais intuitiva. Isso melhora a experiência
+            do usuário, especialmente em dispositivos móveis</p>
+    </main>
+</body>
+</html>
