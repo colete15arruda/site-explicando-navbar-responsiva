@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Códigos Utilizados em Uma Navbar Responsiva</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="/" class="logo">Navbar</a>
+      <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+        <span class="hamburger-icon" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-list" role="menu">
+        <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+        <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+        <li role="menuitem"><a href="pagina3.html">Funcionalidades</a></li>
+        <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+        <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+        <li role="menuitem" class="has-submenu">
+          <a href="pagina6.html">Exemplos de Comandos</a>
+          <ul class="submenu">
+            <li><a href="pagina7.html">Código Simples</a></li>
+            <li><a href="pagina8.html">Código Utilizado</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="accordion">
+<div class="accordion-card">
+    <button class="accordion-header">HTML Das Paginas Do Navbar</button>
+    <div class="accordion-content">
+      <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pt-br"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8" /&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+            &lt;title&gt;O que é Navbar Responsiva&lt;/title&gt;
+            &lt;link rel="stylesheet" href="style.css" /&gt;
+            &lt;script defer src="app.js"&gt;&lt;/script&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;!-- Cabeçalho com navegação principal --&gt;
+            &lt;header class="header"&gt;
+              &lt;nav class="nav" aria-label="Navegação principal"&gt;
+                &lt;a href="/" class="logo"&gt;Navbar&lt;/a&gt;
+                &lt;button class="hamburger" aria-expanded="false" aria-label="Abrir menu"&gt;
+                  &lt;span class="hamburger-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;ul class="nav-list" role="menu"&gt;
+                  &lt;li role="menuitem"&gt;&lt;a href="pagina1.html"&gt;O que é&lt;/a&gt;&lt;/li&gt;
+                  &lt;li role="menuitem"&gt;&lt;a href="pagina2.html"&gt;Principais Características&lt;/a&gt;&lt;/li&gt;
+                  &lt;li role="menuitem"&gt;&lt;a href="pagina3.html"&gt;funcionalidades&lt;/a&gt;&lt;/li&gt;
+                  &lt;li role="menuitem"&gt;&lt;a href="pagina4.html"&gt;Melhores Práticas&lt;/a&gt;&lt;/li&gt;
+                  &lt;li role="menuitem"&gt;&lt;a href="pagina5.html"&gt;Linguagens Utilizadas&lt;/a&gt;&lt;/li&gt;
+                  &lt;li role="menuitem" class="has-submenu"&gt;
+                    &lt;a href="pagina6.html"&gt;Exemplos de Comandos&lt;/a&gt;
+                    &lt;!-- Submenu --&gt;
+                    &lt;ul class="submenu"&gt;
+                      &lt;li&gt;&lt;a href="pagina7.html"&gt;Código Simples&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="pagina8.html"&gt;Código Utilizado&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            &lt;/header&gt;
+            &lt;!-- Conteúdo Principal --&gt;
+            &lt;main class="hero"&gt;
+              &lt;h1&gt;O que é Navbar Responsiva&lt;/h1&gt;
+              &lt;p&gt;
+                Uma NavBar Responsiva é uma barra de navegação que se adapta
+                automaticamente ao tamanho do ecrã do dispositivo utilizado, seja um computador,
+                tablet ou smartphone. Essa adaptabilidade é essencial para garantir que os usuários
+                tenham uma experiência de navegação consistente e intuitiva em qualquer
+                dispositivo.
+              &lt;/p&gt;
+              &lt;br&gt;
+              &lt;p&gt;
+                A importância de uma navbar não pode ser subestimada. Uma navegação intuitiva
+                e bem organizada melhora significativamente a experiência do usuário,
+                reduzindo a frustração e o tempo de busca. Além disso, uma navbar responsiva
+                não apenas melhora a estética do site, mas também atende às necessidades dos
+                usuários modernos, que acessam a internet por meio de uma variedade de
+                dispositivos.
+              &lt;/p&gt;
+            &lt;/main&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+        
+     
+  <h3>Explicação Tecnica do html:</h3>
+<br>
+  <h4><code>!DOCTYPE html</code>:</h4>
+     <p>Declara que este documento é um arquivo HTML5. Essa informação ajuda o navegador a entender como renderizar a página corretamente.</p>
+<br>
+  <h4>O elemento <code>html</code> </h4>
+   <p> é o contêiner raiz de um documento HTML. O atributo <code>lang="pt-br"</code> especifica que o idioma da página é português do Brasil, o que é útil para acessibilidade e SEO.</p>
+ <br> 
+  <section>
+  <h4><code>head</code>:</h4>
+    <p> Contém metadados sobre o documento, como o título da página e links para folhas de estilo e scripts.</p>
+<br> 
+  <h4><code>meta charset="UTF-8"</code>: </h4>
+  <p>que o documento deve usar a codificação UTF-8, que suporta uma ampla gama de caracteres.</p>
+<br>
+  <h4><code>meta name="viewport" content="width=device-width, initial-scale=1.0" / </code>:</h4>
+    <p> Permite que a página se ajuste à largura da tela do dispositivo. Isso é essencial para design responsivo. </p>
+<br>
+  <h4><code>O que é Navbar Responsiva title </code>: </h4>
+  <p> Define o título da página que aparecerá na aba do navegador. </p>
+<br>
+  <h4><code>meta name="viewport" content="width=device-width, initial-scale=1.0" </code>:<h4>
+    <P>Permite que a página se ajuste à largura da tela do dispositivo. Isso é essencial para design responsivo. </p>
+<br> 
+  <h4><code>link rel="stylesheet" href="style.css" </code>:</h4>
+  </p> Conecta a folha de estilo CSS externa chamada style.css, que será usada para estilizar o documento.</p>
+<br>
+  <h4><code>script defer src="app.js" script </code>: </h4>
+  </p>Adiciona um arquivo JavaScript externo chamado app.js, que será executado após o carregamento completo do HTML, melhorando o desempenho da página.</p>
+</section>
+
+<section>
+    <h4><code>body</code>:</h4>
+        <p>Define o cabeçalho da página, que geralmente contém informações de navegação.</p>
+ <br>  
+    <h4><code>header class="header""</code>:</h4>
+         Define o cabeçalho da página, que geralmente contém informações de navegação.</p>
+ <br>    
+    <h4><code>nav class="nav" aria-label="Navegação principal" </code>:</h4>
+    </p> Define a navegação principal. O atributo <code> aria-label </code> melhora a acessibilidade, descrevendo o propósito do menu para tecnologias assistivas..</p>
+ <br>     
+      <h4><code>a href="/" class="logo">navbar a</code>:</h4>
+      </p>Um link que representa o logo da navbar, levando o usuário de volta à página inicial ("/").</p>
+<br>   
+       <h4><code>button class="hamburger" aria-expanded="false" aria-label="Abrir menu"</code>:</h4>
+       </p> Um botão de hambúrguer, que aparece em telas menores (como smartphones). <code>O atributo aria-expanded="false" </code> indica que o menu está inicialmente fechado.<code> O aria-label="Abrir menu" </code> melhora a acessibilidade para leitores de tela. </p>
+<br>  
+        <h4><code>span class="hamburger-icon" aria-hidden="true"> span</code>:</h4>
+          <p> Este elemento visualiza o ícone do hambúrguer, que geralmente são três linhas horizontais, representando o menu.</p>
+<br>        
+         <h4><code>ul class="nav-list" role="menu</code>:</h4>
+         </p>Define uma lista não ordenada que contém os itens de navegação. O atributo <code> role="menu"</code> ajuda na acessibilidade. </p>
+ <br>
+ <h4><code>li role="menuitem" a href="pagina1.html" O que é a  li</code>:</h4>
+         </p>Cada item de navegação é um link <code>a</code>, e o <code> role="menuitem" </code> que são itens de menu.</p>
+<br>
+         <h4><code>li role="menuitem" class="has-submenu"</code>:</h4>
+        </p>Um item de navegação que possui um submenu. A classe <code>has-submenu</code> será útil para estilizar ou manipular o comportamento do submenu.</p>
+<br>
+    <h4>Submenu:</h4>
+    </p>Dentro desse item, há uma lista de subitens ul <code> class="submenu"</code>, que são outros links de navegação.</p>
+    </section>
+<br>
+</section>
+<h4><code>main class="hero"</code>:</h4>
+<p>Representa o conteúdo principal da página. A classe <code>hero</code> pode ser usada para estilizar a seção principal, que normalmente é destacada visualmente..</p>
+<br>  
+<h4><code>h1 O que é Navbar Responsiva h1</code>:</h4>
+<p>O título principal da página, que descreve o conteúdo.</p>
+<br>    
+<h4><code>p </code>:</h4>
+</p> Parágrafos explicativos sobre o que é uma navbar responsiva e sua importância para a experiência do usuário.</p>
+</section>
+ </div>
+  </div>
+
+  <main class="hero">
+    <div class="accordion">
+<div class="accordion-card">
+    <button class="accordion-header">HTML Das Paginas da explicação dos codigos </button>
+    <div class="accordion-content">
+      <h3>Codigo accordion</h3>
+        <pre><code>
+            &lt;div class="accordion"&gt;
+               &lt;div class="accordion-card"&gt;
+                  &lt;button class="accordion-header"&gt;HTML&lt;/button&gt;
+                  &lt;div class="accordion-content"&gt;
+                     &lt;!-- Conteúdo aqui --&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;!-- Mais cards aqui --&gt;
+            &lt;/div&gt;
+            </code></pre>
+        <h3>codigo Explicação</h3>
+            <pre><code>
+                &lt;h3&gt;Explicação Técnica do JS:&lt;/h3&gt;
+                &lt;section&gt;
+                    &lt;h4&gt;&lt;code&gt;const hamburger = document.querySelector(".hamburger");&lt;/code&gt;:&lt;/h4&gt;
+                    &lt;br&gt;
+                    &lt;p&gt;Utiliza &lt;code&gt;document.querySelector&lt;/code&gt; para selecionar o primeiro elemento do DOM que possui a classe &lt;code&gt;hamburger&lt;/code&gt; e o armazena na constante &lt;code&gt;hamburger&lt;/code&gt;. Isso permite que você manipule esse elemento posteriormente, como adicionar um evento de clique.&lt;/p&gt;
+                &lt;/section&gt;
+                &lt;br&gt;
+                &lt;section&gt;
+                    &lt;h4&gt;&lt;code&gt;const nav = document.querySelector(".nav");&lt;/code&gt;:&lt;/h4&gt;
+                    &lt;br&gt;
+                    &lt;p&gt;Similar ao passo anterior, esta linha seleciona o primeiro elemento com a classe &lt;code&gt;nav&lt;/code&gt; e o armazena na constante &lt;code&gt;nav&lt;/code&gt;. Isso normalmente se refere ao elemento de navegação que contém os links.&lt;/p&gt;
+                &lt;/section&gt;
+                &lt;br&gt;
+                &lt;section&gt;
+                    &lt;h4&gt;&lt;code&gt;hamburger.addEventListener("click", () =&gt; { ... });&lt;/code&gt;:&lt;/h4&gt;
+                    &lt;br&gt;
+                    &lt;p&gt;Aqui, um ouvinte de eventos é adicionado ao elemento &lt;code&gt;hamburger&lt;/code&gt;. O evento que está sendo ouvido é o &lt;code&gt;click&lt;/code&gt;, o que significa que quando o botão hamburger é clicado, a função fornecida (que segue a seta) será executada.&lt;/p&gt;
+                &lt;/section&gt;
+                &lt;br&gt;
+                &lt;section&gt;
+                    &lt;h4&gt;&lt;code&gt;nav.classList.toggle("active");&lt;/code&gt;:&lt;/h4&gt;
+                    &lt;br&gt;
+                    &lt;p&gt;Dentro da função de callback do evento de clique, &lt;code&gt;classList.toggle("active")&lt;/code&gt; é chamado no elemento &lt;code&gt;nav&lt;/code&gt;. Essa função adiciona a classe &lt;code&gt;active&lt;/code&gt; ao elemento &lt;code&gt;nav&lt;/code&gt; se ela não estiver presente, ou a remove se já estiver.&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;p&gt;Isso é útil para alternar a visibilidade ou o estilo do menu de navegação, geralmente para exibir ou ocultar a lista de links de navegação em um menu responsivo.&lt;/p&gt;
+                &lt;/section&gt;
+                </code></pre>
+                
+     
+  <h3>Explicação Tecnica do html:</h3>
+<br>
+  <h4><code>!DOCTYPE html</code>:</h4>
+     <p>Declara que este documento é um arquivo HTML5. Essa informação ajuda o navegador a entender como renderizar a página corretamente.</p>
+<br>
+  <h4>O elemento <code>html</code> </h4>
+   <p> é o contêiner raiz de um documento HTML. O atributo <code>lang="pt-br"</code> especifica que o idioma da página é português do Brasil, o que é útil para acessibilidade e SEO.</p>
+ <br> 
+  <section>
+  <h4><code>head</code>:</h4>
+    <p> Contém metadados sobre o documento, como o título da página e links para folhas de estilo e scripts.</p>
+<br> 
+  <h4><code>meta charset="UTF-8"</code>: </h4>
+  <p>que o documento deve usar a codificação UTF-8, que suporta uma ampla gama de caracteres.</p>
+<br>
+  <h4><code>meta name="viewport" content="width=device-width, initial-scale=1.0" / </code>:</h4>
+    <p> Permite que a página se ajuste à largura da tela do dispositivo. Isso é essencial para design responsivo. </p>
+<br>
+  <h4><code>title Códigos Utilizados em Uma Navbar Responsiva title </code>: </h4>
+  <p> Define o título da página que aparecerá na aba do navegador. </p>
+<br>
+  <h4><code>meta name="viewport" content="width=device-width, initial-scale=1.0" </code>:<h4>
+    <P>Permite que a página se ajuste à largura da tela do dispositivo. Isso é essencial para design responsivo. </p>
+<br> 
+  <h4><code>link rel="stylesheet" href="style.css" </code>:</h4>
+  </p> Conecta a folha de estilo CSS externa chamada style.css, que será usada para estilizar o documento.</p>
+<br>
+  <h4><code>script defer src="app.js" script </code>: </h4>
+  </p>Adiciona um arquivo JavaScript externo chamado app.js, que será executado após o carregamento completo do HTML, melhorando o desempenho da página.</p>
+</section>
+
+<section>
+    <h4><code>body</code>:</h4>
+        <p>Define o cabeçalho da página, que geralmente contém informações de navegação.</p>
+ <br>  
+    <h4><code>header class="header""</code>:</h4>
+         Define o cabeçalho da página, que geralmente contém informações de navegação.</p>
+ <br>    
+    <h4><code>nav class="nav" aria-label="Navegação principal" </code>:</h4>
+    </p> Define a navegação principal. O atributo <code> aria-label </code> melhora a acessibilidade, descrevendo o propósito do menu para tecnologias assistivas..</p>
+ <br>     
+      <h4><code>a href="/" class="logo">navbar a</code>:</h4>
+      </p>Um link que representa o logo da navbar, levando o usuário de volta à página inicial ("/").</p>
+<br>   
+       <h4><code>button class="hamburger" aria-expanded="false" aria-label="Abrir menu"</code>:</h4>
+       </p> Um botão de hambúrguer, que aparece em telas menores (como smartphones). <code>O atributo aria-expanded="false" </code> indica que o menu está inicialmente fechado.<code> O aria-label="Abrir menu" </code> melhora a acessibilidade para leitores de tela. </p>
+<br>  
+        <h4><code>span class="hamburger-icon" aria-hidden="true"> span</code>:</h4>
+          <p> Este elemento visualiza o ícone do hambúrguer, que geralmente são três linhas horizontais, representando o menu.</p>
+<br>        
+         <h4><code>ul class="nav-list" role="menu</code>:</h4>
+         </p>Define uma lista não ordenada que contém os itens de navegação. O atributo <code> role="menu"</code> ajuda na acessibilidade. </p>
+ <br>
+ <h4><code>li role="menuitem" a href="pagina1.html" O que é a  li</code>:</h4>
+         </p>Cada item de navegação é um link <code>a</code>, e o <code> role="menuitem" </code> que são itens de menu.</p>
+<br>
+         <h4><code>li role="menuitem" class="has-submenu"</code>:</h4>
+        </p>Um item de navegação que possui um submenu. A classe <code>has-submenu</code> será útil para estilizar ou manipular o comportamento do submenu.</p>
+<br>
+    <h4>Submenu:</h4>
+    </p>Dentro desse item, há uma lista de subitens ul <code> class="submenu"</code>, que são outros links de navegação.</p>
+    </section>
+<br>
+</section>
+<h3>Accordion</h3>
+<h4><code>div class="accordion"</code>:</h4>
+</p> Este é o contêiner principal do acordeão</p>
+<br>
+<h4><code>div class="accordion-card"</code>:</h4>
+</p> Cada "card" do acordeão contém um título (o botão que o usuário clica) e o conteúdo que será mostrado ou ocultado.
+</p>
+<h4><code>button class="accordion-header">HTML button </code>:</h4>
+</p> O título ou cabeçalho de cada card. O usuário clica nesse botão para expandir ou recolher o conteúdo do card.</p>
+<h4><code>div class="accordion-content"</code>:</h4>
+</p>O conteúdo que será mostrado ou ocultado quando o botão for clicado.</p>
+<br>
+</section>
+<br>
+
+</section>
+<H3>Elementos Simples do Html</H3>
+<h4><code> Mostrar um codigo html Sem que o Navegador Inteprete</code>:</h4>
+<p> Esse codigo utiliza um forma de apresentar um codigo HTML na página web sem que o navegador o interprete. Para isso, as tags especiais, como <, >, e &, são substituídas por suas entidades HTML correspondentes, como <code>&lt</code>;,<code> &gt</code>; e <code> &amp </code>;, garantindo que elas apareçam visivelmente como texto na tela. O uso das tags <code>pre</code> e <code> é essencial, pois a tag<code> pre </code> preserva a formatação original do texto, como quebras de linha e espaços, enquanto a tag <code>code</code> indica que o conteúdo é um trecho de código. Esse método permite que o código seja exibido na página sem que o navegador o execute, além de melhorar a legibilidade com a adição de um estilo simples, como fundo claro e padding, para destacar o bloco de código.</p>
+<br>    
+<h4><code>h4</code>:</h4>
+</p> A tag <code>h4</code> é usada para criar um cabeçalho, sendo o quarto nível de cabeçalhos, com <code>h1</code> sendo o nível mais alto. Cabeçalhos são utilizados para estruturar e hierarquizar o conteúdo de uma página. Normalmente, os cabeçalhos de níveis mais baixos (como <code>h4</code>) são usados para subtítulos ou seções dentro de um título maior (como <code>h1</code> ou <code>h3</code>).</p>
+<br>
+<h4><code>section</code>:</h4>
+</p>  tag <Code>section </Code> é usada para agrupar conteúdo relacionado dentro de uma página. Ela ajuda a estruturar o conteúdo de maneira lógica e semântica. Cada <code> section </code> conter um título (como um <code>h1</code>, <code>h2</code> etc.) e outros elementos, como parágrafos, listas, imagens, etc.
+</p>
+<h4><code>P</code>:</h4>
+</p> A tag <code>p </code> é usada para definir um parágrafo de texto. Tudo que for colocado dentro de uma tag <code> p </code>á considerado um bloco de texto, e o navegador automaticamente coloca uma margem antes e depois do parágrafo para separar os blocos de conteúdo.</p>
+<br>
+<h4><code>BR</code>:</h4>
+</p> A tag <code>br</code>> não tem impacto semântico no conteúdo. Ela apenas quebra a linha, sem adicionar uma estrutura semântica como o faz a tag <code>p</code> (para parágrafos) ou <code>h1</code> (para títulos).</p>
+</section>
+ </div>
+  </div>
+
+      <!-- Accordion CSS -->
+      <div class="accordion-card">
+        <button class="accordion-header">CSS</button>
+        <div class="accordion-content">
+          <pre><code>
+            body {
+            /* Reset básico */
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              background-color: #000;
+              color: #fff;
+              display: flex;
+              flex-direction: column;
+              min-height: 100vh;
+              overflow-x: hidden;
+              justify-content: flex-start;
+              align-items: center; /* Alinha o conteúdo centralizado horizontalmente */
+              text-align: center; /* Centraliza o texto de todo o conteúdo da página */
+            }
+            
+            /* Links */
+            a {
+              font-family: inherit;
+              text-decoration: none;
+              color: inherit;
+              transition: color 0.3s ease, transform 0.2s ease;
+            }
+            
+            a:hover {
+              color: #ff1493;
+              transform: scale(1.05);
+            }
+            
+            /* Cabeçalho */
+            .header {
+              background-color: #ff69b4;
+              padding-inline: 16px;
+              position: sticky;
+              top: 0;
+              z-index: 1000;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              transition: background-color 0.3s ease;
+              width: 100%;
+              text-align: center;
+              padding: 10px 0;
+            }
+            
+            /* Navegação */
+            .nav {
+              max-width: 1280px;
+              height: 70px;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+            }
+            
+            .logo {
+              font-size: 32px;
+              font-weight: bold;
+              color: #fff;
+              text-transform: uppercase;
+              letter-spacing: 1.5px;
+              transition: transform 0.3s;
+              text-align: center;
+            }
+            
+            .logo:hover {
+              transform: scale(1.1);
+            }
+            
+            /* Lista de Navegação */
+            .nav-list {
+              display: flex;
+              gap: 32px;
+              list-style: none;
+              position: relative;
+              justify-content: center;
+              width: 100%;
+            }
+            
+            .nav-list a {
+              font-size: 18px;
+              padding: 10px 0;
+              color: #fff;
+              position: relative;
+              font-weight: 500;
+              transition: color 0.3s ease;
+              text-align: center;
+            }
+            
+            .nav-list a::after {
+              content: "";
+              display: block;
+              width: 0;
+              height: 2px;
+              background: #fff;
+              transition: width 0.3s;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+            
+            .nav-list a:hover::after {
+              width: 100%;
+            }
+            
+            /* Submenu */
+            .has-submenu {
+              position: relative;
+            }
+            
+            .submenu {
+              display: none;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              background-color: rgba(255, 105, 180, 0.95);
+              padding: 10px 0;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              z-index: 1000;
+              transition: opacity 0.3s ease, transform 0.3s ease;
+              transform: translateY(10px);
+              opacity: 0;
+              text-align: center;
+            }
+            
+            .submenu a {
+              color: #fff;
+              padding: 8px 20px;
+              display: block;
+              white-space: nowrap;
+              font-size: 16px;
+              font-weight: 400;
+              transition: background-color 0.3s, color 0.3s;
+            }
+            
+            .submenu a:hover {
+              background-color: #ff1493;
+              color: #fff;
+            }
+            
+            .has-submenu:hover .submenu {
+              display: block;
+              transform: translateY(0);
+              opacity: 1;
+            }
+            
+            /* Efeito de Fade-in para o Submenu */
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+                transform: translateY(-10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            
+            /* Botão Hamburger */
+            .hamburger {
+              display: none;
+              border: none;
+              background: none;
+              cursor: pointer;
+              padding: 0;
+              position: relative;
+              z-index: 2;
+            }
+            
+            .hamburger::before,
+            .hamburger::after {
+              content: "";
+              display: block;
+              width: 30px;
+              height: 3px;
+              background-color: #fff;
+              margin: 5px 0;
+              transition: transform 0.3s ease;
+            }
+            
+            /* Efeito para navbar ao rolar */
+            .nav.scrolled {
+              background-color: rgba(0, 0, 0, 0.8);
+              transition: background-color 0.3s ease;
+            }
+            
+            .nav.hidden {
+              transform: translateY(-100%);
+              transition: transform 0.3s ease;
+            }
+            
+            /* Botão de Voltar ao Topo */
+            .back-to-top {
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              display: none;
+              background: #ff69b4;
+              color: #fff;
+              border: none;
+              padding: 10px 15px;
+              border-radius: 50%;
+              cursor: pointer;
+              font-size: 20px;
+              z-index: 1000;
+              transition: opacity 0.3s, transform 0.3s;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+            
+            .back-to-top.visible {
+              display: block;
+              opacity: 1;
+            }
+            
+            .back-to-top:hover {
+              background: #ff1493;
+              transform: scale(1.1);
+            }
+            
+            /* Responsividade */
+            @media (max-width: 750px) {
+              .logo {
+                font-size: 24px;
+              }
+            
+              .hamburger {
+                display: block;
+                z-index: 2;
+              }
+            
+              .nav-list {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: #ff69b4;
+                clip-path: circle(100px at 90% -15%);
+                transition: clip-path 0.6s ease;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                pointer-events: none;
+              }
+            
+              .nav-list a {
+                font-size: 24px;
+                opacity: 0;
+                transition: opacity 0.4s ease;
+              }
+            
+              .nav.active .nav-list {
+                clip-path: circle(1500px at 90% -15%);
+                pointer-events: all;
+              }
+            
+              .nav.active .nav-list a {
+                opacity: 1;
+              }
+            
+              .nav.active .hamburger::before {
+                transform: rotate(135deg);
+              }
+            
+              .nav.active .hamburger::after {
+                transform: rotate(-135deg);
+                margin-top: -7px;
+              }
+            
+              /* Submenu no mobile */
+              .submenu {
+                position: static;
+                background-color: #ff69b4;
+                box-shadow: none;
+                border-radius: 0;
+              }
+            
+              .has-submenu.active .submenu {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+            
+            /* Estilo para o Accordion */
+            .accordion {
+              width: 100%;
+              margin: 20px auto;
+              border-radius: 8px;
+              background-color: #333;
+              padding: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            
+            /* Cabeçalho do Accordion */
+            .accordion-header {
+              background-color: #ff69b4;
+              color: #fff;
+              padding: 15px;
+              text-align: left;
+              width: 100%;
+              cursor: pointer;
+              font-size: 18px;
+              font-weight: bold;
+              transition: background-color 0.3s;
+              border-radius: 4px;
+            }
+            
+            .accordion-header:hover {
+              background-color: #ff1493;
+            }
+            
+            /* Conteúdo do Accordion */
+            .accordion-content {
+              display: none;
+              padding: 15px;
+              background-color: #444;
+              color: #fff;
+              border-radius: 4px;
+            }
+            
+            /* Quando o Accordion estiver aberto */
+            .accordion-header.active + .accordion-content {
+              display: block;
+            }
+            
+            /* Estilo do Código dentro do Accordion */
+            .accordion-content pre {
+              background-color: #222;
+              padding: 10px;
+              border-radius: 4px;
+              white-space: pre-wrap;
+              word-wrap: break-word;
+            }
+}</code></pre>
+
+<h3>Explicação Teórica do CSS:</h3>
+
+<section>
+    <h4><code>.hamburger</code>:</h4>
+    <p>Define a aparência do botão hamburguer, incluindo seu tamanho, cor e posicionamento. Este botão será usado para abrir e fechar o menu de navegação.</p>
+</section>
+
+<section>
+    <h4><code>.nav</code>:</h4>
+    <p>Estiliza o menu de navegação, incluindo a posição e o estilo do menu, como a cor de fundo e as propriedades de exibição para dispositivos móveis.</p>
+</section>
+
+<section>
+    <h4><code>.nav-list</code>:</h4>
+    <p>Define o estilo da lista de links de navegação, controlando a exibição vertical ou horizontal e a forma como os itens são apresentados, como espaçamento e alinhamento.</p>
+</section>
+
+<section>
+    <h4><code>.nav-list a</code>:</h4>
+    <p>Define o estilo de cada link dentro da lista de navegação, incluindo cor, estilo de borda e o efeito ao passar o mouse, como uma mudança de cor ou sublinhado.</p>
+</section>
+
+<section>
+    <h4><code>.has-submenu</code>:</h4>
+    <p>Estiliza os itens de menu que contêm submenus, permitindo um estilo diferenciado para indicar que esses itens possuem opções adicionais, como um ícone ou setas.</p>
+</section>
+
+<section>
+    <h4><code>body</code>:</h4>
+    <p>Define as propriedades gerais da página, como a cor de fundo, fontes padrão e margens, criando uma base para o design de toda a página.</p>
+</section>
+
+<section>
+    <h4><code>.back-to-top</code>:</h4>
+    <p>Define o estilo do botão de "Voltar ao Topo", incluindo o posicionamento fixo no canto da tela, tamanhos e cores para destacá-lo como um botão flutuante.</p>
+</section>
+
+<section>
+    <h4><code>@media (max-width: 768px)</code>:</h4>
+    <p>Cria uma regra de mídia para dispositivos móveis, ajustando o layout do menu de navegação e escondendo/mostrando o menu hamburguer de acordo com a largura da tela.</p>
+</section>
+
+<section>
+    <h4><code>.accordion-header</code>:</h4>
+    <p>Define o estilo dos cabeçalhos do acordeão, ajustando a aparência de cada item interativo que será expandido ou recolhido ao ser clicado.</p>
+</section>
+
+<section>
+    <h4><code>.accordion-content</code>:</h4>
+    <p>Estiliza o conteúdo do acordeão, incluindo propriedades de visibilidade e animações para exibir ou ocultar o conteúdo de forma suave ao interagir com os cabeçalhos.</p>
+</section>
+
+<section>
+    <h4><code>html, body</code>:</h4>
+    <p>Estabelece as configurações de layout para toda a página, como a altura mínima da página, margem e padding para garantir que o conteúdo se ajuste corretamente na tela.</p>
+</section>
+    </div>
+      </div>
+
+      <!-- Accordion JavaScript -->
+      <div class="accordion-card">
+        <button class="accordion-header">JavaScript</button>
+        <div class="accordion-content">
+          <pre><code>
+            // Seleção dos elementos principais
+            const hamburger = document.querySelector(".hamburger");
+            const nav = document.querySelector(".nav");
+            const navList = document.querySelector(".nav-list");
+            const navLinks = document.querySelectorAll(".nav-list a");
+            const submenuParent = document.querySelector(".has-submenu");
+            let lastScrollY = window.scrollY;
+            
+            // Alterna o menu ao clicar no botão hambúrguer
+            hamburger.addEventListener("click", () => {
+              navList.classList.toggle("active");
+              hamburger.classList.toggle("active");
+            
+              // Acessibilidade: atualiza o aria-expanded
+              const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
+              hamburger.setAttribute("aria-expanded", !expanded);
+            
+              // Evita o scroll quando o menu está ativo
+              document.body.style.overflow = navList.classList.contains("active") ? "hidden" : "auto";
+            
+              // Animação para os itens da navbar
+              navLinks.forEach((link, index) => {
+                setTimeout(() => {
+                  link.classList.toggle("slide-in");
+                }, index * 100); // Delay para o efeito
+              });
+            });
+            
+            // Alterna o submenu ao clicar em "Exemplos de Comandos" (somente em dispositivos móveis)
+            submenuParent.addEventListener("click", (e) => {
+              if (window.innerWidth <= 750) {
+                e.preventDefault(); // Impede o redirecionamento no mobile
+                submenuParent.classList.toggle("active");
+              }
+            });
+            
+            document.querySelector('.hamburger').addEventListener('click', function () {
+              this.classList.toggle('active');
+              document.querySelector('.nav').classList.toggle('active');
+            });
+            
+            // Fecha o menu ao clicar em um link (somente em dispositivos móveis)
+            navLinks.forEach(link => {
+              link.addEventListener("click", () => {
+                if (navList.classList.contains("active")) {
+                  navList.classList.remove("active");
+                  hamburger.classList.remove("active");
+                  document.body.style.overflow = "auto";
+                }
+            
+                // Remove a classe ativa de todos os links e adiciona ao clicado
+                navLinks.forEach(link => link.classList.remove("active-link"));
+                link.classList.add("active-link");
+              });
+            });
+            
+            // Muda a cor da navbar e exibe/esconde com scroll
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 50) {
+                nav.classList.add("scrolled");
+              } else {
+                nav.classList.remove("scrolled");
+              }
+            
+              // Oculta a navbar ao rolar para baixo e exibe ao rolar para cima no mobile
+              const isScrollingDown = window.scrollY > lastScrollY;
+              if (window.innerWidth <= 750) {
+                nav.classList.toggle("hidden", isScrollingDown);
+              }
+              lastScrollY = window.scrollY;
+            
+              // Mostra o botão "Voltar ao Topo" ao rolar para baixo
+              if (window.scrollY > 200) {
+                backToTopButton.classList.add("visible");
+              } else {
+                backToTopButton.classList.remove("visible");
+              }
+            });
+            
+            // Criação do botão "Voltar ao Topo"
+            const backToTopButton = document.createElement("button");
+            backToTopButton.classList.add("back-to-top");
+            backToTopButton.innerText = "↑";
+            document.body.appendChild(backToTopButton);
+            backToTopButton.style.position = "fixed";
+            backToTopButton.style.bottom = "20px";
+            backToTopButton.style.right = "20px";
+            backToTopButton.style.zIndex = "1000";
+            
+            // Rola suavemente ao topo
+            backToTopButton.addEventListener("click", () => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+            
+            // Animações e efeitos nos links ao passar o mouse
+            navLinks.forEach(link => {
+              link.addEventListener("mouseover", () => link.classList.add("hovered"));
+              link.addEventListener("mouseleave", () => link.classList.remove("hovered"));
+            });
+            
+            // Função de responsividade para ajustar o layout
+            function responsiveNavbar() {
+              const isMobile = window.innerWidth <= 750;
+            
+              if (isMobile) {
+                hamburger.style.display = "block";
+                nav.classList.add("mobile");
+                nav.classList.remove("desktop");
+            
+                // Fecha o menu ao clicar fora dele
+                document.addEventListener("click", (e) => {
+                  if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                    navList.classList.remove("active");
+                    hamburger.classList.remove("active");
+                    document.body.style.overflow = "auto";
+                  }
+                });
+              } else {
+                hamburger.style.display = "none";
+                nav.classList.remove("mobile");
+                nav.classList.add("desktop");
+                navList.classList.remove("active");
+                document.body.style.overflow = "auto";
+            
+                // Remove as animações de entrada no desktop
+                navLinks.forEach(link => link.classList.remove("slide-in"));
+              }
+            }
+            
+            // Ajusta o layout ao carregar e redimensionar a janela
+            window.addEventListener("resize", responsiveNavbar);
+            window.addEventListener("load", responsiveNavbar);
+            
+            // script do menu hamburguer
+            document.querySelector('.hamburger').addEventListener('click', function () {
+              const navList = document.querySelector('.nav-list');
+              navList.classList.toggle('active');
+              // Alterna o estado do botão hamburguer
+              const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+              this.setAttribute('aria-expanded', !expanded);
+            });
+            
+            // script do acordeão
+            const accordions = document.querySelectorAll('.accordion-header');
+            accordions.forEach(accordion => {
+              accordion.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                  content.style.display = 'none';
+                } else {
+                  content.style.display = 'block';
+                }
+              });
+            });
+            
+            // Função para scroll animado para os links internos
+            function smoothScroll(target) {
+              document.querySelector(target).scrollIntoView({ behavior: "smooth" });
+            }
+            navLinks.forEach(link => {
+              link.addEventListener("click", (e) => {
+                if (link.hash) {
+                  e.preventDefault();
+                  smoothScroll(link.hash);
+                }
+              });
+            });
+        </pre></code>
+            <h3>Explicação Teórica do JS:</h3>
+<section>
+    <h4><code>const hamburger = document.querySelector(".hamburger");</code>:</h4>
+    <p>Seleciona o elemento com a classe <code>hamburger</code> e armazena-o na constante <code>hamburger</code> para manipulação posterior.</p>
+</section>
+
+<section>
+    <h4><code>const nav = document.querySelector(".nav");</code>:</h4>
+    <p>Esta linha seleciona o primeiro elemento no DOM (Document Object Model) que possui a classe <code>hamburger</code>. Esse elemento é geralmente um botão ou ícone que representa o menu hambúrguer (o menu de navegação que aparece em dispositivos móveis). O <code>hamburger</code> será o elemento que o usuário interage para abrir ou fechar o menu.</p>
+</section>
+
+<section>
+    <h4><code>const navList = document.querySelector(".nav-list");</code>:</h4>
+    <p>Armazena a lista de navegação na variável <code>navList</code>, para abrir e fechar o menu ao clicar no botão hamburguer.</p>
+</section>
+
+<section>
+    <h4><code>const navLinks = document.querySelectorAll(".nav-list a");</code>:</h4>
+    <p>Seleciona todos os links dentro de <code>nav-list</code> para manipulação individual, como aplicar animações ou fechar o menu ao clicar.</p>
+</section>
+
+<section>
+    <h4><code>const submenuParent = document.querySelector(".has-submenu");</code>:</h4>
+    <p>Armazena o item de menu com submenu, para abrir e fechar o submenu em dispositivos móveis.</p>
+</section>
+
+<section>
+    <h4><code>let lastScrollY = window.scrollY;</code>:</h4>
+    <p>Guarda a posição do scroll anterior, permitindo monitorar o movimento de rolagem para ocultar ou exibir o menu.</p>
+</section>
+
+<section>
+    <h4><code>hamburger.addEventListener("click", ...);</code>:</h4>
+    <p>Adiciona um evento de clique ao botão hamburguer, alternando o menu e impedindo o scroll ao ativar o menu em dispositivos móveis.</p>
+</section>
+
+<section>
+    <h4><code>submenuParent.addEventListener("click", ...);</code>:</h4>
+    <p>Abre o submenu em dispositivos móveis ao clicar em "Exemplos de Comandos".</p>
+</section>
+
+<section>
+    <h4><code>window.addEventListener("scroll", ...);</code>:</h4>
+    <p>Adiciona uma função de rolagem que ajusta o menu conforme o scroll. Também oculta o menu ao rolar para baixo em dispositivos móveis.</p>
+</section>
+
+<section>
+    <h4><code>const backToTopButton = document.createElement("button");</code>:</h4>
+    <p>Cria um botão para "Voltar ao Topo", visível ao rolar a página, e define sua posição.</p>
+</section>
+
+<section>
+    <h4><code>navLinks.forEach(link => ...);</code>:</h4>
+    <p>Configura animações nos links ao passar o mouse e adiciona rolagem suave para links internos.</p>
+</section>
+
+<section>
+    <h4><code>function responsiveNavbar() {...}</code>:</h4>
+    <p>Ajusta a exibição do menu entre dispositivos móveis e desktop. Fecha o menu ao clicar fora dele e remove a animação em telas maiores.</p>
+</section>
+
+<section>
+    <h4><code>const accordions = document.querySelectorAll('.accordion-header');</code>:</h4>
+    <p>Cria um efeito de acordeão para cabeçalhos. Ao clicar, o conteúdo alterna entre expandido e recolhido.</p>
+</section>
+
+<section>
+    <h4><code>function smoothScroll(target) {...}</code>:</h4>
+    <p>Realiza uma rolagem suave ao clicar em links que levam a seções da mesma página.</p>
+</section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
