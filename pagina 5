@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linguagens Utilizadas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <header class="header">
+      <nav class="nav" aria-label="Navegação principal">
+          <a href="/" class="logo">Navbar</a>
+          <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+              <span class="hamburger-icon" aria-hidden="true"></span>
+          </button>
+          <ul class="nav-list" role="menu">
+              <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+              <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+              <li role="menuitem"><a href="pagina3.html">Funcionalidades</a></li>
+              <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+              <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+                  <li role="menuitem" class="has-submenu">
+                    <a href="pagina6.html">Exemplos de Comandos</a>
+                    <!-- Submenu -->
+                    <ul class="submenu">
+                        <li><a href="pagina7.html">Código Simples</a></li>
+                        <li><a href="pagina8.html">Código Utilizado</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+  <!-- Conteúdo Principal -->
+  <main class="hero">
+    <h1>Linguagens Utilizadas</h1>
+    <p>Uma navbar responsiva é construída usando uma combinação de linguagens de programação:</p>
+<br>
+    <section>
+        <h2>HTML (HyperText Markup Language)</h2>
+        <p>É a base da estrutura da navbar. O HTML define os elementos que compõem a navbar, como links, títulos e ícones. Cada link é encapsulado em elementos <code>&lt;a&gt;</code> dentro de uma lista não ordenada <code>&lt;ul&gt;</code>, que é um padrão comum.</p>
+    </section>
+<br>
+    <section>
+        <h2>CSS (Cascading Style Sheets)</h2>
+        <p>Utilizado para estilizar a navbar, o CSS permite ajustar layouts, cores, fontes, tamanhos e aplicar animações. Com CSS, você pode fazer a navbar não apenas funcionar bem, mas também se destacar visualmente. Propriedades como <code>display</code>, <code>flex</code>, <code>margin</code> e <code>padding</code> são frequentemente usadas para criar um layout responsivo.</p>
+    </section>
+<br>
+    <section>
+        <h2>JavaScript</h2>
+        <p>Adiciona interatividade à navbar. Por exemplo, você pode usar JavaScript para criar menus dropdown que aparecem e desaparecem com cliques ou toques. Isso torna a navegação mais dinâmica e envolvente, permitindo que os usuários explorem diferentes seções sem precisar recarregar a página.</p>
+    </section>
+<br>
+    <section>
+    <br>  
+        <h2>Frameworks CSS (Bootstrap, Tailwind CSS): </h2>
+ <br>     
+      <p>Simplificam a criação de NavBars responsivas com componentes prontos e bem estruturados.</p>
+      <br>
+  </section>
+</main>
+</body>
+</html>
