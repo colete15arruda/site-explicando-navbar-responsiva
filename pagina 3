@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcionalidades</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="/" class="logo">Navbar</a>
+            <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburger-icon" aria-hidden="true"></span>
+            </button>
+            <ul class="nav-list" role="menu">
+                <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+                <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+                <li role="menuitem"><a href="pagina3.html">Funcionalidades</a></li>
+                <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+                <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+                    <li role="menuitem" class="has-submenu">
+                      <a href="pagina6.html">Exemplos de Comandos</a>
+                      <!-- Submenu -->
+                      <ul class="submenu">
+                          <li><a href="pagina7.html">Código Simples</a></li>
+                          <li><a href="pagina8.html">Código Utilizado</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+
+    <main class="hero">
+        <h1>Funcionalidades</h1>
+        <p>As principais funcionalidades de uma navbar responsiva são essenciais para proporcionar uma navegação fluida e agradável:</p>
+        <br>
+        <h4>Menu de Colapso ("Hambúrguer"):</h4>
+        <p>Em dispositivos móveis, um ícone de
+            menu aparece e, ao ser tocado, exibe os links de navegação. Isso economiza
+            espaço e mantém a interface limpa.
+        </p>
+        <br>
+        <h4>Links Dinâmicos e Dropdowns:</h4>
+        <p>Itens de menu que expandem quando clicados, facilitando a navegação por diferentes seções do site.</p>
+        <br>
+        <h4>Pesquisa e Ícones de Acesso Rápido:</h4>
+        <p>Algumas NavBars incluem funcionalidades adicionais, como um campo de pesquisa ou ícones de acesso rápido (carrinho de compras, perfil do usuário).</p>
+        <br>
+        <h4>Transições e Animações: </h4>
+        <p>Para uma experiência mais fluida, a NavBar pode
+            incluir animações suaves ao expandir e recolher.</p>
+    </main>
+</body>
+</html>
