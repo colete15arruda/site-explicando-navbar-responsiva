@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de comando</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <header class="header">
+      <nav class="nav" aria-label="Navegação principal">
+          <a href="/" class="logo">Navbar</a>
+          <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+              <span class="hamburger-icon" aria-hidden="true"></span>
+          </button>
+          <ul class="nav-list" role="menu">
+              <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+              <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+              <li role="menuitem"><a href="pagina3.html">Funcionalidades</a></li>
+              <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+              <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+                  <li role="menuitem" class="has-submenu">
+                    <a href="pagina6.html">Exemplos de Comandos</a>
+                    <!-- Submenu -->
+                    <ul class="submenu">
+                        <li><a href="pagina7.html">Código Simples</a></li>
+                        <li><a href="pagina8.html">Código Utilizado</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <main class="hero">
+      <h1>Exemplos de Comandos</h1>
+<br>   
+      <p>Para a criação deste trabalho, utilizamos um código básico como base para desenvolver a estrutura completa do site. Optamos por dividir essa base em duas partes, a fim de facilitar a compreensão e o detalhamento técnico de cada aspecto do projeto:</p>
+<br>  
+      <h3>Código da Navbar Básica:</h3>
+ <br>    
+      <p> Inicialmente, trabalhamos com um código básico para uma navbar simples, que serviu como referência e base para nossa pesquisa. Essa navbar abordou os princípios fundamentais de uma navegação responsiva, explorando pontos essenciais de usabilidade e adaptabilidade para dispositivos móveis, que foram posteriormente aprimorados.</p>
+<br>
+    <h3>Código do Site Completo:</h3>
+<br>   
+    <p>A segunda parte envolveu a construção do site em si, utilizando o conhecimento adquirido na etapa anterior. O código desenvolvido abrange toda a estrutura do site, incluindo layouts, funcionalidades interativas e componentes necessários. Além disso, cada parte do código vem acompanhada de explicações técnicas, detalhando as escolhas feitas para a implementação das funcionalidades e o funcionamento geral do site.</p>
+<br>
+<p>Essa abordagem permitiu uma evolução do projeto, começando por uma solução simples e fundamentada, até alcançar um site funcional com base em práticas técnicas mais avançadas.</p>
+    </section>
+    </main>
+  </body>
+</html>
