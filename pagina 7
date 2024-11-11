@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Códigos Utilizados em Uma Navbar Responsiva</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="/" class="logo">Navbar</a>
+      <button class="hamburger" aria-expanded="false" aria-label="Abrir menu">
+        <span class="hamburger-icon" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-list" role="menu">
+        <li role="menuitem"><a href="pagina1.html">O que é</a></li>
+        <li role="menuitem"><a href="pagina2.html">Principais Características</a></li>
+        <li role="menuitem"><a href="pagina3.html">Funcionalidades</a></li>
+        <li role="menuitem"><a href="pagina4.html">Melhores Práticas</a></li>
+        <li role="menuitem"><a href="pagina5.html">Linguagens Utilizadas</a></li>
+        <li role="menuitem" class="has-submenu">
+          <a href="pagina6.html">Exemplos de Comandos</a>
+          <ul class="submenu">
+            <li><a href="pagina7.html">Código Simples</a></li>
+            <li><a href="pagina8.html">Código Utilizado</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="accordion">
+      <!-- Accordion HTML -->
+<div class="accordion-card">
+    <button class="accordion-header">HTML</button>
+    <div class="accordion-content">
+      <pre><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Trabalho 3° Trimestre&lt;/title&gt;
+      &lt;link rel="stylesheet" href="style.css" /&gt;
+      &lt;script defer src="app.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;header class="header"&gt;
+        &lt;nav class="nav"&gt;
+          &lt;a href="/" class="logo"&gt;navbar&lt;/a&gt;
+          &lt;button class="hamburger"&gt;&lt;/button&gt;
+          &lt;ul class="nav-list"&gt;
+            &lt;li&gt;&lt;a href="paginas/pagina1.html"&gt;O que é&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="paginas/pagina2.html"&gt;Principais Características&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="paginas/pagina3.html"&gt;Melhores Práticas&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="paginas/pagina4.html"&gt;Linguagens Utilizadas&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="paginas/pagina5.html"&gt;Exemplos de Comandos&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt;
+      &lt;main class="hero"&gt;&lt;/main&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+     
+  <h3>Explicação Tecnica do html:</h3>
+<br>
+  <h4><code>!DOCTYPE html</code>:</h4>
+     <p>Declara que este documento é um arquivo HTML5. Essa informação ajuda o navegador a entender como renderizar a página corretamente.</p>
+<br>
+  <h4>O elemento <code>html</code> </h4>
+   <p> é o contêiner raiz de um documento HTML. O atributo <code>lang="pt-br"</code> especifica que o idioma da página é português do Brasil, o que é útil para acessibilidade e SEO.</p>
+ <br> 
+  <section>
+  <h4><code>head</code>:</h4>
+    <p> Contém metadados sobre o documento, como o título da página e links para folhas de estilo e scripts.</p>
+<br> 
+  <h4><code>meta charset="UTF-8"</code>: </h4>
+  <p>que o documento deve usar a codificação UTF-8, que suporta uma ampla gama de caracteres.</p>
+<br>
+  <h4><code>meta name="viewport" content="width=device-width, initial-scale=1.0" / </code>:</h4>
+    <p> Permite que a página se ajuste à largura da tela do dispositivo. Isso é essencial para design responsivo. </p>
+<br>
+  <h4><code>title Trabalho 3° Trimestre title </code>: </h4>
+  <p>  Permite que a página se ajuste à largura da tela do dispositivo. Isso é essencial para design responsivo. </p>
+<br>
+  <h4><code>meta name="viewport" content="width=device-width, initial-scale=1.0" </code>:<h4>
+    <P>Permite que a página se ajuste à largura da tela do dispositivo. Isso é essencial para design responsivo. </p>
+<br> 
+  <h4><code>link rel="stylesheet" href="style.css" </code>:</h4>
+  </p> Conecta a folha de estilo CSS externa chamada style.css, que será usada para estilizar o documento.</p>
+<br>
+  <h4><code>script defer src="app.js" script </code>: </h4>
+  </p>Adiciona um arquivo JavaScript externo chamado app.js, que será executado após o carregamento completo do HTML, melhorando o desempenho da página.</p>
+</section>
+
+<section>
+    <h4><code>body</code>:</h4>
+        <p>Define o cabeçalho da página, que geralmente contém informações de navegação.</p>
+ <br>  
+    <h4><code>header class="header""</code>:</h4>
+         Define o cabeçalho da página, que geralmente contém informações de navegação.</p>
+ <br>    
+    <h4><code>nav class="nav" </code>:</h4>
+    </p> Um elemento de navegação que agrupa links de navegação.</p>
+ <br>     
+      <h4><code>a href="/" class="logo">navbar a</code>:</h4>
+      </p>Um link que representa o logo da navbar, levando o usuário de volta à página inicial ("/").</p>
+<br>   
+       <h4><code> button class="hamburger" button</code>:</h4>
+       </p> Um botão que geralmente é usado para abrir um menu de navegação em dispositivos móveis, conhecido como "hamburger menu". </p>
+<br>  
+        <h4><code>ul class="nav-list"</code>:</h4>
+          <p> Uma lista não ordenada que contém os itens de navegação.</p>
+<br>        
+         <h4><code>li a href="paginas/pagina1.html" O que é a  li</code>:</h4>
+         </p>Cada item da lista <code> li </code> contém um link <code>a </code> para diferentes páginas do site. </p>
+  </section>
+<br>
+<h4><code>main class="hero" main</code></h4>
+<p>O elemento <code> main </code> é usado para representar o conteúdo principal da página. Neste caso, a classe "hero" sugere que pode haver um conteúdo visual ou destaque que pode ser estilizado por CSS.</p>
+ </div>
+  </div>
+  
+      <!-- Accordion CSS -->
+      <div class="accordion-card">
+        <button class="accordion-header">CSS</button>
+        <div class="accordion-content">
+          <pre><code>body {
+            * {
+                margin: 0;
+                padding: 0;
+              }
+              
+              a {
+                font-family: sans-serif;
+                text-decoration: none;
+              }
+              
+              .header {
+                background: #a5c;
+                padding: 16px;
+              }
+              
+              .nav {
+                max-width: 1280px;
+                height: 70px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+              
+              .logo {
+                font-size: 32px;
+                color: #fff;
+                font-weight: bold;
+              }
+              
+              .nav-list {
+                display: flex;
+                gap: 32px;
+              }
+              
+              .nav-list a {
+                font-size: 18px;
+                color: #fff;
+                padding: 16px 0;
+              }
+              
+              .hero {
+                height: calc(100vh - 70px);
+                background: center / cover no-repeat url("./bg.jpg");
+              }
+              
+              .hamburger {
+                display: none;
+              }
+              
+              @media (max-width: 750px) {
+                .logo {
+                  font-size: 24px;
+                }
+              
+                .hamburger {
+                  display: block;
+                  cursor: pointer;
+                }
+              
+                .nav-list {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100vw;
+                  height: 100vh;
+                  background: #a5c;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  display: none;
+                }
+              
+                .nav.active .nav-list {
+                  display: flex;
+                }
+              }
+              
+}</code></pre>
+       <h3>Explicação Tecnica do CSS:</h3>
+          <h4><code>*** { ... }**</code>:<h4>
+            <p>Seleciona todos os elementos da página e remove as margens e o preenchimento padrão (padding), garantindo que não haja espaçamento extra por padrão.</p>
+    <br>
+        <h4><code>a { ... }</code>: <h4>
+        </p>Define que todos os links <code> a </code> terão a fonte sans-serif e removem o sublinhado (decoração) dos links.</p>
+    <br>
+        <h4><code>.header { ... }</code>: <h4>
+        </p> um fundo com a cor <code> #a5c </code> (um tom de roxo) e adiciona um preenchimento <code> padding </code> de 16px ao redor do conteúdo dentro do header.</p>
+    <br>
+        <h4><code>.nav { ... }</code>: </h4>
+        <p> a barra de navegação <code>nav </code> com uma largura máxima de 1280px, altura de 70px e centraliza o conteúdo horizontalmente com <code>margin: auto</code> . Usa <code>display: flex</code> para organizar os itens dentro da navegação em linha, com espaçamento entre os itens <code>justify-content: space-between</code> e alinhamento vertical no centro  <code>align-items: center</code>.</p>
+    <br>
+        <h4><code>.logo { ... }</code>:<h4>
+        </p>Define o estilo do logo, com tamanho de fonte de 32px, cor branca e peso da fonte em negrito.</p>
+    <br>
+        <h4><code>.nav-list { ... }</code>: <h4>
+        </p>Organiza os itens de navegação <code>.nav-list</code> em uma linha com <code>display: flex</code> e define um espaço de 32px entre os itens <code>gap: 32px</code>.</p>
+    <br>
+        <h4><code>.hero { ... }</code>:</h4>
+        <p> Estiliza os links dentro da lista de navegação com tamanho de fonte de 18px, cor branca e preenchimento de 16px na parte superior e inferior.</p>
+    <br>
+        <h4><code>.header { ... }</code>:</h4>
+        </p> Esconde o botão hamburger (menu de navegação para dispositivos móveis) por padrão..</p>
+    <br>
+        <h4><code>.hamburger { ... }:</code>:<h4>
+        </p> Estiliza a barra de navegação <code>nav </code> com uma largura máxima de 1280px, altura de 70px e centraliza o conteúdo horizontalmente com <code>margin: auto</code> . Usa <code>display: flex</code> para organizar os itens dentro da navegação em linha, com espaçamento entre os itens <code>justify-content: space-between</code> e alinhamento vertical no centro  <code>align-items: center</code>.</p>
+    <br>
+    <section>
+        <h4><code>@media (max-width: 750px) { ... }: </code>: </h4>
+        </p>Essa regra define estilos para telas com largura máxima de 750px (tipicamente dispositivos móveis).</p>
+    <br>
+        <p>A fonte do logo é reduzida para 24px.</p>
+        <p>O botão hamburger é exibido <code>display: block </code> e o cursor é alterado para "pointer" (indicando que é clicável).</p>
+        <p>A lista de navegação <code>.nav-list </code> é posicionada de forma fixa, cobrindo toda a tela, e organizada em coluna, com os itens centralizados. Ela começa oculta <code>display: none. </code></p>
+        <p>Quando a classe <code>active </code> é adicionada à <code>nav</code>, a lista de navegação é exibida com <code> display: flex.</code></p>
+    </section>
+    </div>
+      </div>
+
+      <!-- Accordion JavaScript -->
+      <div class="accordion-card">
+        <button class="accordion-header">JavaScript</button>
+        <div class="accordion-content">
+          <pre><code>const hamburger = document.querySelector(".hamburger");
+            const nav = document.querySelector(".nav");
+            
+            hamburger.addEventListener("click", () => {
+              nav.classList.toggle("active");
+            });</code></pre>
+            <h3>Explicação Tecnica do JS:</h3>
+        <section>
+                <h4><code>const hamburger = document.querySelector(".hamburger");</code>:</h4>
+        <br> 
+               <p>Utiliza <code>document.querySelector </code> para selecionar o primeiro elemento do DOM que possui a classe <code>hamburger</code> e o armazena na constante <code>hamburger </code>. Isso permite que você manipule esse elemento posteriormente, como adicionar um evento de clique.</p>
+        </section>
+    <br>  
+        <section>
+                <h4><code>const nav = document.querySelector(".nav");</code>:</h4>
+    <br>
+                <p>Similar ao passo anterior, esta linha seleciona o primeiro elemento com a classe <code> nav </code> e o armazena na constante ><code> nav </code>. Isso normalmente se refere ao elemento de navegação que contém os links.</p>
+        </section>
+    <br>
+        <section>
+                <h4><code>nav.classList.toggle("active");</code>:</h4>
+    <br>           
+                <p>Aqui, um ouvinte de eventos é adicionado ao elemento <code>hamburger</code>. O evento que está sendo ouvido é o <code>click</code>, o que significa que quando o botão hamburger é clicado, a função fornecida (que segue a seta) será executada.</p>
+        </section>
+    <br>
+        <section>
+            <h4><code>nav.classList.toggle("active");</code>:</h4>
+    <br>        
+            <p>Dentro da função de callback do evento de clique, <code> classList.toggle("active") </code> é chamado no elemento <code>nav</code> Essa função adiciona a classe active ao elemento <code>nav</code> se ela não estiver presente, ou a remove se já estiver.</p>
+    <br> 
+            <p>Isso é útil para alternar a visibilidade ou o estilo do menu de navegação, geralmente para exibir ou ocultar a lista de links de navegação em um menu responsivo.</p>
+        </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
